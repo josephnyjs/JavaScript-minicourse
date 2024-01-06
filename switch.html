@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Demo</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    function fruitCost(fruit){
+        switch(fruit){
+            case 'Orange':
+                alert("Orange cost: 10 pesos")
+            break;
+            case 'Strawberry':
+                alert("Strawberry cost: 15 pesos")
+            break;
+            case 'Pineaple': 
+                alert("Pineaple cost: 30 pesos")
+            break;
+            case 'Watermelon': 
+                alert("Watermelon cost: 40 pesos")
+            break;
+            default:
+                alert("We don't have the price of that fruit")
+            break; 
+        }
+    }
+    let f=prompt("Insert the name of the fruit")
+    fruitCost(f)
+</script>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Demo</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    let fruits=["lemon","blueberry","watermelon", "orange"]
+    let months=["January","February", "March","April","June","July", "August"]
+    //alert(fruits[0])
+
+    //Desde aquí trabajaremos en el video tamaños de arrays
+    //numero de elementos en un array
+    console.log("La cantidad de frutas es: " +fruits.length)
+    console.log("Mostrar limón: "+fruits[0])
+
+   /* let data={name:"Josephny", last:"Jimenez", age: 28, phone: "3503980044"}
+    console.log("My name is: "+data.name)
+    console.log("My lastname is: "+data.last)
+    console.log(data)
+    */
+
+   /* fruits.forEach(function(element,index,array){
+        console.log("The element is:"+element)
+        console.log("The position is: "+index)
+        console.log("The array is: "+array)
+       console.log(element, index)
+    }) */
+    //Add an element at the start of the array 
+    //let addToTheStart=fruits.unshift("Pomegranate")
+    //console.log("aquí se agregó Pomegranate")
+
+    //Delete the first element of the array 
+    //let deleteTheLast=fruits.shift("Pomegranate")
+    //console.log("aquí se liminó Pomegranate")
+
+    //Add an element at the end of the array
+    let newEnd=fruits.push("pineaple")
+
+    //Delete the last element of the array
+    let deleteLastElement= fruits.pop()
+
+    // Recorrer el array 
+    fruits.forEach(function(element,index,array){
+       console.log(element, index)
+    })
+    console.log(fruits.length)
+
+    //Find an element by name  => Array indexOf
+    let findAnElement=fruits.indexOf('blueberry')
+    console.log(findAnElement)
+    
+    //copy the entire array => Slice
+    let months2=months.slice()
+    console.log("Months: "+months)
+    console.log("Meses: "+months2)
+
+    //Delete an element by position/name => splice
+    let deletePosition=fruits.splice(findAnElement,1)
+
+    fruits.forEach(function(element,index,array){
+       console.log(element, index)
+    })
+</script>

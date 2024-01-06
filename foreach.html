@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Demo</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let people=["Josy","Carlos","Cristian", "Yanyi","Gabriela","Enma","Marialbert"]
+    console.log(people.length)
+    //way of traversing an array
+    /*for(x=0;x<people.length;x++){ //x=0 porque los arreglos empiezan en el index 0
+        console.log("Persona número: "+x+" = "+people[x])
+    }*/ 
+    //Another way of traversing an array
+    //Using just a line
+    people.forEach(function(element,index,array){
+        console.log(element,index)
+        console.log("Persona número "+index+" = "+element)
+    })    
+</script>

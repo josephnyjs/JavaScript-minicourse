@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals page</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    // This is practicing IF conditionals
+    let a=10
+    if(a>=10){
+        console.log("Minor")
+    }else{
+        console.log("Major")
+    }
+    
+
+    //Practicing ELSE IF
+    /* let age=parseInt(prompt("Insert your age: "))
+    if(age<=0){
+        alert("The age must be major than 0")
+    }else if(age>=101){
+        alert("The age is not valid for this program")
+    }*/ 
+
+    //Best way usig operators
+    // and = &&
+    // or = ||
+    /*
+    let age1=parseInt(prompt("Insert you age"))
+    if (age1<=0 || age1>100){
+        alert("Te Age must be major tha 0 and minor than 100")
+    }else if(age1>0 && age1<=10){
+        alert("You're a child")
+    }else if(age1>=11 && age1<=17){
+        alert("You're a teenager")
+    }else if(age1>=18 && age1<60){
+        alert("You're an adult")
+    }else{
+        alert("You're dying xD")
+    }*/
+    function validateAge(e){
+        if (age1<=0 || age1>100){
+        alert("Te Age must be major tha 0 and minor than 100")
+    }else if(age1>0 && age1<=10){
+        alert("You're a child")
+    }else if(age1>=11 && age1<=17){
+        alert("You're a teenager")
+    }else if(age1>=18 && age1<60){
+        alert("You're an adult")
+    }else{
+        alert("You're dying xD")
+    }
+    }
+    let age1=parseInt(prompt("Insert your age"))
+    validateAge(age1)
+</script>
