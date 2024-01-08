@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asynchronus</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+   /* let x=10
+    console.log("#### 1. first process ####")
+    setTimeout(()=>{
+        console.log("#### 2. Second Process ####")
+    }, 100)
+    console.log("#### 3. Third process ####")
+    */
+   
+    //same process but using Promise
+    let  x=10
+    console.log("1st Process")
+    const myPromise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            x=x*3+2
+            console.log("2nd process finished")
+            resolve(x)
+        });
+    },5000)
+
+    myPromise.then(res => {
+        console.log("3rd process: "+res)
+    })
+</script>

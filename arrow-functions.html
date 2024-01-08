@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    //usual function
+    function hallo(){
+        console.log("Hello there")
+    }
+    hallo()
+
+    // Arrow functions
+    const greetings = () => {
+        console.log("Hi, this is an arrow function")
+    }
+    /////////////////////////
+    //Usual function
+    function add(a,b){
+        console.log(a+b)
+    }
+    add(3,4)
+
+    //Same arrow function
+    const adition = (b,c) => {
+        console.log("This is the result: "+(b+c))
+    }
+    adition(5,5)
+
+    //Using just one parameter
+    const square = x => console.log(x+" squared is: "+(x*x))
+    square(2)
+
+    //A function returns a default value
+    const subtraction = (d=3,e=3) => {
+        console.log(d+e)
+    }
+    subtraction()
+
+</script>
